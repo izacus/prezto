@@ -11,3 +11,10 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export ANDROID_HOME=/Users/jernej/Development/android-sdk
+export GOPATH=/Users/jernej/Workspace/Go
+export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
+export PATH=/Users/jernej/Development/android-sdk/platform-tools:/Users/jernej/Development/android-sdk/tools:/Users/jernej/Development/android-sdk/ndk-bundle:/usr/local/opt/go/libexec/bin:$PATH
+alias gitclean="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d"
+alias p4merge='/Applications/p4merge.app/Contents/Resources/launchp4merge'
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
