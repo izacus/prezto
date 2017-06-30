@@ -35,10 +35,10 @@ zstyle ':prezto:load' pmodule \
   'fasd' \
   'git' \
   'git-open' \
+  'ruby' \
   'archive' \
   'homebrew' \
   'rsync' \
-  'syntax-highlighting' \
   'prompt'
 
 
